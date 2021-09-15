@@ -16,6 +16,7 @@ public class MyScanner {
                 System.out.println(COLORS.ANSI_RED + "The N that you enter is not Integer :(  , try again" + COLORS.ANSI_RESET);
             }
         }
+        userInput.close();
         return N;
     }
 }
