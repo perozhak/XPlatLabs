@@ -45,10 +45,10 @@ public class Counter {
     private long[] impreciseSeriesSum(int n){
         long num = 0, denum = 1;
         for(int i=1;i<=n;i++){
-            denum *= Math.pow(i,3)+5;
+            denum *= (Math.pow(i,3)+5);
         }
         for(int i=1;i<=n;i++){
-            num += denum/Math.pow(i,3)+5;
+            num += denum/(Math.pow(i,3)+5);
         }
 
         System.out.println(COLORS.ANSI_GREEN + "Success!" + COLORS.ANSI_RESET);
